@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Border radius and shadow generator</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="code.js" type="text/javascript" charset="utf-8"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27007414-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<h1> CSS3 Border Radius and Shadow Generator</h1>
+	<p>Use the form below to generate the css for your boxes. The changes you make will automatically be reflected on the box. When you're happy with what you see copy paste the code at the bottom of the page to your element CSS. </p>
+
+	<div id="box">
+	
+	
+	</div> <!-- ends #box-->
+
+	<div id="form">
+		<h3>Change values here</h3>
+		<p>For changes to take effect hit Tab key on your keyboard or click outside the box you just edited. If you'd like to RESET the values refresh the page. </p>
+		
+		<div id="errors"> 
+			<ul id="errorlist">
+				<li id="error_color"></li>
+				<li id="error_border_style"></li>
+				<li id="error_border_color"></li>
+				<li id="error_shadow_color"></li>
+			</ul>
+			
+		</div>
+		
+		<form>
+		Width: <input type="text" id="box_width" value="200px" onblur="box_width_update()" class="number" />
+		Height: <input type="text" id="box_height" value="200px" onblur="box_height_update()" class="number" /> 
+		Background color: <input type="text" id="box_bg_color" value="#dddddd" onblur="box_bg_color_update()" class="color" /> <br />
+		Border color: <input type="text" id="border_color" value="#eeeeee" onblur="border_color_update()" class="color"/> 
+		Border width: <input type="text" id="border_size" value="2px" onblur="border_size_update()" class="number" /> 
+		Border style: <input type="text" id="border_style" value="solid" onblur="border_style_update()" class="color" /> <span class="hint"><a href="http://www.w3schools.com/cssref/pr_border-style.asp" target="_blank" >Options</a></span> <br />
+		Border radius: <input type="text" id="border_radius" value="5px" onblur="border_radius_update()" class="number" /> <span class="hint">This is what makes the round corners.</span> <br />
+		<p>Box Shadow: <br />
+		Horizontal offset: <input type="text" id="horizontal_offset" value="0" onblur="border_shadow_update()" class="number" /><span class="hint">Positive numbers push shadow right.</span>  <br />
+		Vertical offset: <input type="text" id="vertical_offset" value="0" onblur="border_shadow_update()" class="number" /> <span class="hint">Positive numbers push shadows down.</span> <br />
+		Blur radius: <input type="text" id="blur_radius" value="5px" onblur="border_shadow_update()" class="number" /> <span class="hint">(optional) Higher numbers will make shadow expand but become lighter.</span>  <br />
+		Spread radius: <input type="text" id="spread_radius" value="0" onblur="border_shadow_update()" class="number" /> <span class="hint">(optional) Higher numbers will make shadow thicker.</span> <br />
+		Color: <input type="text" id="shadow_color" value="#666" onblur="border_shadow_update()" class="color" /> <br />
+		</p>
+		</form>
+	
+	</div> <!-- ends #form-->
+	
+	<h3>Copy and Paste this into your element CSS</h3>
+	<div id="copypaste">
+			
+			<div id="box_height_text"> height: 200px; </div>
+			<div id="box_width_text"> width: 200px; </div>
+			<div id="box_bg_color_text"> background-color: #dddddd;</div>
+			<div id="border_style_text"> border-style: solid;</div>
+			<div id="border_size_text"> border-width: 2px;</div>
+			<div id="border_color_text"> border-color: #eeeeee;</div>
+			<div id="border_radius_text_webkit"> -webkit-border-radius: 5px;</div>			
+			<div id="border_radius_text_moz"> -moz-border-radius: 5px;</div>
+			<div id="border_radius_text"> border-radius: 5px;</div>
+			<div id="box_shadow_text_webkit"> -webkit-box-shadow: 0 0 5px 0 #666;</div>			
+			<div id="box_shadow_text_moz"> -moz-box-shadow: 0 0 5px 0 #666;</div>
+			<div id="box_shadow_text"> box-shadow: 0 0 5px 0 #666;</div>
+	</div><!-- ends #copypaste-->
+	
+	<h3>Other resources</h3>
+	<p>Don't know color codes? Find them here: <a href="http://www.colorpicker.com/"> http://www.colorpicker.com/ </a></p>
+	<p>If you need help with the shadows <a href="http://css-tricks.com/snippets/css/css-box-shadow/">check this article</a>.</p>
+	<p>Learn more about <a href="http://www.css3.info/preview/rounded-border/"> border radius</a>.</p>		
+	
+	<div id="footer">
+		<p>Version 1.0. Last updated January 29, 2012. Created by <a href="http://www.caneruguz.com"> Caner Uguz </a></p>
+	
+	</div><!-- ends #footer-->
+	
+</div> <!-- ends #wrapper-->
+</body>
+</html>

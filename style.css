@@ -1,0 +1,121 @@
+body {
+	background: #fff url(grid-18px-masked.png) repeat-x;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #222;
+}
+
+#wrapper {
+	width: 700px;
+	margin: 50px auto;
+}
+
+#form input[type=text] {
+	border:1px solid #ccc;
+	background-color: #fefefe;
+	padding: 5px;
+	font-size: 14px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+.number {
+	width: 50px;
+}
+
+.color {
+	width: 80px;
+}
+
+#box {
+	margin: 50px auto;
+	height: 200px;
+	width: 200px;
+	background-color: #dddddd;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 5px 0 #666;
+	-moz-box-shadow: 0 0 5px 0 #666;
+	box-shadow: 0 0 5px 0 #666;
+}
+
+
+#copypaste {
+	width: 600px;
+	background-color: white;
+	//border: 1px solid #ccc;
+	padding: 20px;
+	font-family: Courier, sans-serif;	
+	font-size: 16px;
+	color: #666;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 4px 0 #666;
+	-moz-box-shadow: 0 0 4px 0 #666;
+	box-shadow: 0 0 4px 0 #666;
+}
+
+#copypaste div {
+	display: block;
+}
+
+.hint {
+	font-size: 12px;
+	font-style: italic;
+	color: #666;
+	margin-left: 10px;
+}
+
+#footer {
+	border-top:1px dotted #999;
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+	margin-top: 50px;
+
+}
+
+#errors {
+	paddin: 0;
+	margin: 0;
+}
+
+#errorlist li {
+	list-style: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 12px;
+	//color: red;
+	font-weight: bold;
+	padding: 5px 15px;
+	background-color: #FFC6C3;
+	border-style: none;
+	border-width: 2px;
+	border-color: #eeeeee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 5px 0 #666;
+	-moz-box-shadow: 0 0 5px 0 #666;
+	box-shadow: 0 0 5px 0 #666;
+}
+
+#error_color, #error_border_color, #error_shadow_color, #error_border_style {
+	display: none;
+}
